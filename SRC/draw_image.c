@@ -6,7 +6,7 @@
 /*   By: yarypert <yarypert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/06 17:29:57 by yarypert          #+#    #+#             */
-/*   Updated: 2017/03/17 14:51:32 by yarypert         ###   ########.fr       */
+/*   Updated: 2017/03/20 20:47:36 by yarypert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,6 @@ void	line(t_ptr *ptr,int color)
 
 void	draw_image(char *str, t_ptr ptr)
 {
-	ptr.x = 0;
-	ptr.y = 0;
 	ptr.mlx = mlx_init();
 	ptr.win = mlx_new_window(ptr.mlx, SIZE_X, SIZE_Y, str);
 	mlx_hook(ptr.win, 17,(1L << 17),exit_cross,&ptr);
